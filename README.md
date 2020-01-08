@@ -7,6 +7,14 @@
 sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/98wb.sh)"
 ``````
 
+# 删除鼠须管
+
+如果你不想再使用鼠须管，终端输入如下一条命令将删除之：
+
+``````
+sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/del.sh)"
+``````
+
 # 功能及简介
 
 [鼠须管98五笔版](https://wubi98.gitee.io/input%20method/2019/12/03/032.squirrel.html)
