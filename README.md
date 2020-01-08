@@ -15,6 +15,7 @@ sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/98wb.sh)"
 sudo rm -rf /Library/Input\ Methods/Squirrel.app
 ``````
 
+
 # 功能及简介
 
 [鼠须管98五笔版](https://wubi98.gitee.io/input%20method/2019/12/03/032.squirrel.html)
