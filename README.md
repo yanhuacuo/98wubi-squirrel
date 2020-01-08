@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/98wb.sh)"
 如果你不想再使用鼠须管，终端输入如下一条命令将删除之：
 
 ``````
-sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/del.sh)"
+sudo rm -rf /Library/Input\ Methods/Squirrel.app
 ``````
 
 # 功能及简介
