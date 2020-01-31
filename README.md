@@ -4,7 +4,7 @@
 
 
 ``````
-sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/98wubi.sh)"
+sh -c "$(curl -fsSL https://gitee.com/wubi98/shell/raw/master/98wb.sh)"
 ``````
 
 # 删除鼠须管
