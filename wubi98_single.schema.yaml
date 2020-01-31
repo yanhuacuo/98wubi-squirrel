@@ -4,8 +4,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: wubi98_ci
-  name: "含词"
+  schema_id: wubi98_single
+  name: "拆分"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -23,7 +23,7 @@ switches:
     reset: 0
     states: [ 简,繁 ]
   - name: 98wb_spelling
-    reset: 0    
+    reset: 1
     states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
@@ -75,7 +75,7 @@ speller:
   max_code_length: 4
   
 translator:
-  dictionary: wubi98_ci.extended
+  dictionary: wubi98_dz
   db_class: tabledb
   initial_quality: 100000
   enable_charset_filter: false
@@ -152,6 +152,7 @@ simplifier:
 #   - rvlk1
   tips: all 
 
+
 jiayin:
   opencc_config: jiayin.json
   option_name: jiayin
@@ -186,7 +187,7 @@ history:
   
 
 key_binder:
-  bindings: 
+  bindings:
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
@@ -209,4 +210,4 @@ punctuator:
   import_preset: symbols
   
 menu:
-  page_size: 9  
+  page_size: 9

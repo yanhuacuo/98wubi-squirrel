@@ -4,8 +4,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: wubi98_ci
-  name: "含词"
+  schema_id: wubi98_chr
+  name: "详解"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -22,8 +22,8 @@ switches:
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
-  - name: 98wb_spelling
-    reset: 0    
+  - name: 98wb_spelling_rk
+    reset: 1    
     states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
@@ -36,8 +36,8 @@ engine:
     - charset_filter@gb2312  
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
-#   - "simplifier@98wb_spelling_rk"
-    - "simplifier@98wb_spelling"
+    - "simplifier@98wb_spelling_rk"
+#   - "simplifier@98wb_spelling"
     - "simplifier@jiayin"
     - uniquifier
   processors:
@@ -75,7 +75,7 @@ speller:
   max_code_length: 4
   
 translator:
-  dictionary: wubi98_ci.extended
+  dictionary: wubi98_dz
   db_class: tabledb
   initial_quality: 100000
   enable_charset_filter: false
@@ -136,10 +136,9 @@ simplifier:
   opencc_config: s2t.json
   option_name: zh_trad
 
-
-98wb_spelling:
-  opencc_config: 98wb_spelling.json
-  option_name: 98wb_spelling
+98wb_spelling_rk:
+  opencc_config: 98wb_spelling_rk.json
+  option_name: 98wb_spelling_rk
   show_in_comment: true
   comment_format:
     - "xform/☯/ · /"    
@@ -186,7 +185,7 @@ history:
   
 
 key_binder:
-  bindings: 
+  bindings:
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
@@ -198,9 +197,9 @@ key_binder:
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
-    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
-    - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
+    - {accept: "Control+Shift+H", toggle: 98wb_spelling_rk, when: always}
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling_rk, when: always} 
+    - {accept: "Control+Shift+K", toggle: 98wb_spelling_rk, when: always}
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
@@ -209,4 +208,4 @@ punctuator:
   import_preset: symbols
   
 menu:
-  page_size: 9  
+  page_size: 9

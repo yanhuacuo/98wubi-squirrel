@@ -1,0 +1,5 @@
+# Squirrel settings
+# encoding: utf-8
+patch:
+  "style/font_face": "98WB-1"
+  "style/horizontal": false
