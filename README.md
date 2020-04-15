@@ -1,3 +1,26 @@
+# 重要提醒
+
+Mac 下的「鼠须管」已经进行方案文件升级，引入 Lua 组件更好地取代 OpenCC 的部分功能：
+
+请下载[「mac增量更新」包](https://github.com/yanhuacuo/98wubi-tables/blob/master/%E8%BE%93%E5%85%A5%E6%B3%95%E8%BD%AF%E4%BB%B6/mac%E5%A2%9E%E9%87%8F%E6%9B%B4%E6%96%B0.zip)，进行配置更新。
+
+
+网速不好的朋友，到这里下「mac增量更新」：
+
+http://98wb.ys168.com/
+
+# 与 windows 下的「小狼毫」实现了同等功能
+
+![输入help](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/1.jpg)
+
+![输入help](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/2.jpg)
+
+![z键拼音](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/3.jpg)
+
+![快键键](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/4.gif)
+
+
+
 # 鼠须管98五笔专版
 
 如果你已经安装过了「鼠须管」，你只需要在终端中输入下面一条命令，就可获取这份配置到你的 Mac 上：
